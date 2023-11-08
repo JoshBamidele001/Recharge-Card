@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="recharde.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="nav">
+            <div id="navpattern">
+                <img src="real jayexploits icon.png" alt="">
+                <h1>RECHARGE SERVICES</h1>
+            </div>
+
+            <div id="networkBox">
+                <h3>Choose the network</h3> <br>
+                <label for="network">Network Provider</label>
+                <select name="" id="network">
+                    <option value="MTN">MTN</option>
+                    <option value="AIRTEL">AIRTEL</option>
+                    <option value="GLO">GLO</option>
+                    <option value="9Mobile">9Mobile</option>
+                </select>
+
+                    <label for="amount">Amount</label>
+                    <select name="" id="amount">
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                </select>
+                <br> <br>
+                <button onclick="getPin()" id="getcard">GET PIN</button>
+
+                <div id="display">
+                    <h3>Voucher's Pin:</h3>
+                    <div id="dispPin"></div>
+                </div>
+            </div>
+
+            <div id="loadBox">
+                <div id="alertMsg">
+                    <p>Kindly copy the Pin generated and paste below</p>
+                </div> <br>
+                <h3>LOAD MTN VOUCHER</h3>
+                <input type="text" id="loadMTN">
+                <button onclick="loadMTNCard()">LOAD MTN</button>
+                <br> <br>
+                <h3>LOAD GLO VOUCHER</h3>
+                <input type="text" id="loadGLO">
+                <button onclick="loadGLOCard()">LOAD GLO</button>
+                <br> <br>
+                <h3>LOAD AIRTEL VOUCHER</h3>
+                <input type="text" id="loadAIRTEL">
+                <button onclick="loadAIRTELCard()">LOAD AIRTEL</button>
+                <br> <br>
+                <h3>LOAD 9MOBILE VOUCHER</h3>
+                <input type="text" id="load9MOBILE">
+                <button onclick="load9MOBILECard()">LOAD 9MOBILE</button>
+
+
+            </div>
+
+            
+
+        </div>
+    </div>
+</body>
+<script src="recharge.js"></script>
+</html>
